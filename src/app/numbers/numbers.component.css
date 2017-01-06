@@ -1,0 +1,9 @@
+.btn{
+    width: 95%;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+}
+#value{
+    text-align: right;
+    width: 100%;
+}

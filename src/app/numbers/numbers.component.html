@@ -1,0 +1,50 @@
+<div class="container">
+    <h1><input id="value" disabled value="{{output}}"></h1>
+    <table class="table">
+        <tbody>
+        <tr>
+            <td><button class="btn btn-success" name="btn1" (click)="numberClicked(1)"> 1 </button></td>
+            <td><button class="btn btn-success" name="btn2" (click)="numberClicked(2)"> 2 </button></td>
+            <td><button class="btn btn-success" name="btn3" (click)="numberClicked(3)"> 3 </button></td>
+            <td><button class="btn btn-success" name="divide_btn" (click)="opClicked('/')"> / </button></td>
+        </tr>
+
+        <tr>
+            <td><button class="btn btn-success" name="btn4" (click)="numberClicked(4)"> 4 </button></td>
+            <td><button class="btn btn-success" name="btn5" (click)="numberClicked(5)"> 5 </button></td>
+            <td><button class="btn btn-success" name="btn6" (click)="numberClicked(6)"> 6 </button></td>
+            <td><button class="btn btn-success" name="multiply_btn" (click)="opClicked('x')" > x </button></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-success" name="btn7" (click)="numberClicked(7)"> 7 </button></td>
+            <td><button class="btn btn-success" name="btn8" (click)="numberClicked(8)"> 8 </button></td>
+            <td><button class="btn btn-success" name="btn9" (click)="numberClicked(9)"> 9 </button></td>
+            <td><button class="btn btn-success" name="subtract_btn" (click)="opClicked('-')" > - </button></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-success" name="decimal_btn" (click)="numberClicked('.')"> . </button></td>
+            <td><button class="btn btn-success" name="btn0" (click)="numberClicked(0)"> 0 </button></td>
+            <td><button class="btn btn-success" name="calc_btn" (click)="opClicked('=')"> = </button></td>
+            <td><button class="btn btn-success" name="add_btn" (click)="opClicked('+')" > + </button></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-xs-4">
+          <p>Output (input field): {{output}}</p>
+          <p>Pending Value: {{pending_value}}</p>
+          <p>Pending Total {{pending_total}}</p>
+          <p>Pending Operator: {{pendingOperation}}</p>
+          <p>New number?: {{newNumber}}</p>
+        </div>
+      <div class="col-xs-4">
+        <p>Equation: {{equation}}</p>
+        <p>Calculated Total {{calculated_Total}}</p>
+      </div>
+        <div class="col-xs-4">
+          <p>Previous Equation: {{previous_equation}}</p>
+          <p>Final Operator: {{lastOperator}}</p>
+        </div>
+    </div>
+
+</div>
